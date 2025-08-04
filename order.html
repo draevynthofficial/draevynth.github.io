@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Products | DRAEVYNTH</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Order on WhatsApp</h1>
+        <form id="orderForm">
+            <label for="product">Product</label>
+            <select id="product" name="product">
+                <option value="Custom Branded Shirt">Custom Branded Shirt</option>
+                <option value="Exclusive Cap">Exclusive Cap</option>
+                <option value="Custom Mug">Custom Mug</option>
+            </select>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Delivery Address</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <button type="submit" class="btn">Order on WhatsApp</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var product = document.getElementById('product').value;
+            var quantity = document.getElementById('quantity').value;
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+            var address = document.getElementById('address').value;
+            var message = `Hello, I want to order:\\nProduct: ${product}\\nQuantity: ${quantity}\\nName: ${name}\\nPhone: ${phone}\\nAddress: ${address}`;
+            var whatsappLink = `https://wa.me/2347011729564?text=${encodeURIComponent(message)}`;
+            window.open(whatsappLink, '_blank');
+        });
+    </script>
+</body>
+</html>
