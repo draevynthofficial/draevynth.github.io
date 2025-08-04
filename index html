@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAEVYNTH — Build Your Empire</title>
+    <meta property="og:title" content="DRAEVYNTH — Build Your Empire">
+    <meta property="og:description" content="Learn how to make money online and grow your business with DRAEVYNTH.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1537432376769-00aabc1fb8f5?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://draevynthofficial.github.io/">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="https://images.unsplash.com/photo-1537432376769-00aabc1fb8f5?auto=format&fit=crop&w=1200&q=80" alt="DRAEVYNTH Coding Banner">
+        <div class="overlay">
+            <h1>DRAEVYNTH — Build Your Empire & Make Money Online</h1>
+            <a href="pre-order.html" class="btn">Pre-Order Course ₦9,000</a>
+            <a href="order.html" class="btn">Order Products on WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=500&q=80" alt="Branded Shirt">
+                <h3>Custom Branded Shirt</h3>
+                <a href="order.html" class="btn">Order Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1625646112597-416584926b7c?auto=format&fit=crop&w=500&q=80" alt="Exclusive Cap">
+                <h3>Exclusive Cap</h3>
+                <a href="order.html" class="btn">Order Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1601237729328-c6d31f21531e?auto=format&fit=crop&w=500&q=80" alt="Custom Mug">
+                <h3>Custom Mug</h3>
+                <a href="order.html" class="btn">Order Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
