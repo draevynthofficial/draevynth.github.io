@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Order Online Course | DRAEVYNTH</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Pre-Order: Make Money Online Course</h1>
+        <p>Exclusive Offer: ₦9,000 (Original ₦39,000)</p>
+        <button class="btn" onclick="payWithPaystack()">Pay Now</button>
+    </div>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script>
+        function payWithPaystack(){
+            var handler = PaystackPop.setup({
+                key: 'pk_test_d4cd43a90f0a19fd65f5c9c63815e6d68f9c95e8',
+                email: 'draevynth@gmail.com',
+                amount: 900000,
+                currency: 'NGN',
+                callback: function(response){
+                    window.location.href = "thank-you.html?ref=" + response.reference;
+                },
+                onClose: function(){
+                    alert('Payment process was closed.');
+                }
+            });
+            handler.openIframe();
+        }
+    </script>
+</body>
+</html>
